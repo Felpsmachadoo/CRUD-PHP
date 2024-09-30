@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CRUD PHP</title>
+</head>
+<body>
+  <div class="container">
+    <header>Cadastro Clientes</header>
+    <form action="create.php" method="POST" class="form">
+      <div class="input-box">
+        <label for="name">Nome: </label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="input-box">
+        <label for="cpf">CPF: </label>
+        <input type="text" id="cpf" name="cpf" required>
+      </div>
+
+      <div class="input-box">  
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <button type="submit">Cadastrar Cliente</button>
+
+      <div class="link">
+      <a href="list.php">Vizualizar Cadastros</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
